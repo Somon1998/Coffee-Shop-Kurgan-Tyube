@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee Shop</title>
 
+    <!-- icon link  -->
+    <link rel="icon" type="image/svg+xml" href="public/img/Coffee Shop.svg" />
+
     <!-- Styles are bundled by Vite -->
 
     <!-- font link  -->
@@ -696,22 +699,25 @@
               </div>
               <div class="contact-info-content">
                 <h4>Наш адрес</h4>
-                <span>город, улица, индекс</span>
+                <p>Город Курган-Тюбе</p>
+                <p>Улица Вахдат 198</p>
+                <p>Coffee Shop</p>
               </div>
             </div>
           </div>
 
-          <form action="" class="contact-form">
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="contact-form"
+          >
             <h3>Заполните форму</h3>
             <div class="contact-row">
               <input
-                type="text"
-                name="subject"
-                placeholder="Тема"
-                required
-                autocomplete="off"
+                type="hidden"
+                name="access_key"
+                value="d7d9f50d-d271-4223-8d50-c64367ea7142"
               />
-              <i class="fa-solid fa-pen"></i>
             </div>
             <div class="contact-row">
               <input
@@ -762,8 +768,10 @@
             <div class="col-content">
               <a href="#" class="logo">Coffee Shop</a>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-                incidunt nisi nobis voluptate nesciunt cupiditate.
+                У нас вы найдете широкий ассортимент свежего кофе и чая, который
+                удовлетворит даже самых требовательных гурманов. Наши продукты
+                отличаются высоким качеством, насыщенным вкусом и ароматом, что
+                делает каждую чашку незабываемой
               </p>
               <div class="social-links">
                 <i class="fa-brands fa-youtube"></i>
@@ -864,7 +872,7 @@
         </div>
 
         <div class="copyright">
-          <p>Разработано Каримзода Сомон &copy; 2025. Все права защищены.</p>
+          <p>Разработано Каримзода Сомон &copy; 2026. Все права защищены.</p>
         </div>
       </div>
     </footer>
