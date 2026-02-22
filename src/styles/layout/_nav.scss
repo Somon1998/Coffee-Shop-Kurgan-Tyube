@@ -1,0 +1,226 @@
+/* nav section start  */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.nav-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    position: relative;
+    transition: var(--transition);
+}
+
+.nav-logo a {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.nav-links ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
+
+.nav-links ul li {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.nav-links ul li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 8px 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    gap: 5px;
+    position: relative;
+    z-index: 2;
+    color: var(--color-text);
+    transition: var(--transition);
+}
+
+.nav-links ul li a i {
+    color: var(--main-color);
+    font-size: 20px;
+    transition: var(--transition);
+}
+
+.nav-links ul li.active {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+#navbar.active {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.nav-links ul li.active a,
+.nav-links ul li.active i {
+    color: #fff;
+}
+
+.nav-links ul li::before {
+    content: '';
+    position: absolute;
+    top: -105%;
+    left: 0;
+    background-color: var(--main-color);
+    width: 100%;
+    height: 100%;
+    transition: var(--transition);
+}
+
+.nav-links ul li:hover::before {
+    top: 0%;
+}
+
+.nav-links ul li:hover a,
+.nav-links ul li:hover i {
+    color: #fff;
+}
+
+.nav-scrolled .nav-box {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 15px 30px;
+    background-color: var(--color-bg);
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .3);
+}
+
+@media screen and (min-width: 901px) {
+    .nav-icon {
+        display: none;
+    }
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+}
+
+@media screen and (max-width: 900px) {
+    .nav-links {
+        display: flex !important;
+    }
+
+    .nav-actions {
+        position: absolute;
+        right: 30px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .nav-icon i {
+        font-size: 30px;
+        color: var(--color-text);
+    }
+
+    .nav-links::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        background-color: rgba(0, 0, 0, .3);
+        transition: var(--transition);
+        z-index: -2;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+        background-color: var(--color-bg);
+        position: fixed;
+        margin: auto;
+        bottom: -100%;
+        right: 0;
+        left: 0;
+        height: auto;
+        max-height: 400px;
+        padding: 30px;
+        z-index: 99999;
+        border-radius: 10px 10px 0px 0px;
+        transition: var(--transition);
+        overflow: auto;
+        box-shadow: 0px 7px 12px #333;
+    }
+
+    .nav-links ul::before {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 80px;
+        height: 4px;
+        background-color: var(--color-muted);
+        border-radius: 50px;
+    }
+
+    .nav-links ul li {
+        width: 100%;
+        display: flex;
+        min-height: 40px;
+    }
+
+    .nav-links ul li a {
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .show ul {
+        bottom: 0%;
+    }
+
+    .show::before {
+        opacity: 1;
+        visibility: visible;
+        z-index: 2;
+    }
+}

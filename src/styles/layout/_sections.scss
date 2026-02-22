@@ -1,0 +1,48 @@
+/* section styles css  */
+
+section {
+    width: 100%;
+    /* min-height: 100vh; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.section-title-icon {
+    width: 100%;
+    max-width: 200px;
+    min-height: 50px;
+    background-color: var(--color-accent);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.section-title-icon i {
+    color: var(--main-color);
+    font-size: 35px;
+    margin-top: -40px;
+}
+
+.section-title h3 {
+    margin-top: 20px;
+    font-size: 45px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-accent);
+}

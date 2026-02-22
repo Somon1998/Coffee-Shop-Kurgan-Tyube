@@ -1,0 +1,121 @@
+/* categories section start  */
+
+.categories {
+    padding: 50px 30px;
+}
+
+.categories .section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 75px;
+}
+
+.tabs-item .tabs-item-content img {
+    width: 50px;
+}
+
+.tabs {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.tabs-controls {
+    flex: 1 1 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.tabs-item {
+    padding: 30px 20px;
+    background-color: var(--color-surface);
+    color: var(--color-accent);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.tabs-item-active {
+    background-color: var(--main-color);
+    color: #fff !important;
+}
+
+.tabs-item .tabs-item-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 2;
+}
+
+.tabs-item::before {
+    content: '';
+    position: absolute;
+    top: 150%;
+    left: 150%;
+    width: 250%;
+    height: 250%;
+    border-radius: 100%;
+    background-color: var(--color-accent);
+    transition: all .5s ease;
+    z-index: 0;
+}
+
+.tabs-item:hover::before {
+    left: -50%;
+    top: -50%;
+    border-radius: 100%;
+}
+
+.tabs-item .tabs-item-content:hover {
+    color: #fff;
+}
+
+.tabs-body {
+    flex: 10 1 500px;
+    padding: 40px;
+    width: 100%;
+    background-color: var(--color-surface);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.tabs-body-item img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+}
+
+.tabs-body-item {
+    flex-direction: column;
+    gap: 25px;
+    transition: all .5s ease;
+    transform: scale(0.75);
+    opacity: 0;
+    display: none;
+}
+
+.tabs-body-item-active {
+    display: flex !important;
+    transform: scale(1);
+    opacity: 1;
+}
+
+.tabs-body-item h3 {
+    font-size: 25px;
+}
+
+.tabs-body-item p {
+    max-width: 800px;
+}
+
+/* categories section end */

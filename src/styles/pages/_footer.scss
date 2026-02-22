@@ -1,0 +1,103 @@
+/* footer section start  */
+
+.footer {
+    padding: 50px 30px;
+    margin: 0px;
+    background-color: var(--color-accent);
+}
+
+.footer .section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    margin: 0 auto;
+}
+
+.footer-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    justify-content: center;
+    gap: 25px;
+}
+
+.col-content a.logo {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.col-content .social-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.col-content .social-links i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.col h3 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.col .links li {
+    margin-bottom: 10px;
+}
+
+.col .links li a {
+    color: #fff;
+}
+
+.col .links li a span {
+    transition: all .3s ease-in-out;
+}
+
+.col .links li a span:hover {
+    margin-left: 10px;
+}
+
+.col p {
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.col form input {
+    padding: 6px 10px;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.footer .btn::after {
+    background-color: var(--color-bg);
+}
+
+.section-container .copyright {
+    padding: 20px 0px;
+    text-align: center;
+    border-top: 1px solid #fff3;
+    width: 100%;
+}
+
+.section-container .copyright p {
+    color: #fff;
+}
+
+/* footer section end */

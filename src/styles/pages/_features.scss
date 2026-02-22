@@ -1,0 +1,62 @@
+/* features section start  */
+
+.features {
+    padding: 0px 30px;
+    margin: -30px 0px 30px;
+}
+
+.features .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    gap: 40px;
+}
+
+.features .grid .features-item {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.features .grid .features-item .features-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 2;
+}
+
+.features .grid .features-item .features-content i {
+    font-size: 35px;
+}
+
+.features .grid .features-item .features-content h3 {
+    text-transform: uppercase;
+}
+
+.features .grid .features-item::before {
+    content: '';
+    position: absolute;
+    top: 150%;
+    left: 150%;
+    width: 250%;
+    height: 250%;
+    border-radius: 100%;
+    background-color: var(--color-accent);
+    transition: all .5s ease;
+    z-index: 0;
+}
+
+.features .grid .features-item:hover::before {
+    left: -50%;
+    top: -50%;
+    border-radius: 100%;
+}
+
+/* features section end */

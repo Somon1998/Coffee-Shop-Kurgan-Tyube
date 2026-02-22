@@ -1,0 +1,63 @@
+/* review section start  */
+
+.reviews {
+    padding: 50px 30px;
+}
+
+.reviews .section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.review-box {
+    position: relative;
+    width: 100%;
+    max-width: 950px;
+    border-radius: 15px;
+    background-color: var(--color-accent);
+}
+
+.review-box .review-swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 400px;
+}
+
+.review-box .review-swiper .swiper-slide .swiper-slide-content {
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: #fff;
+}
+
+.review-box .review-swiper .swiper-slide .swiper-slide-content i {
+    font-size: 80px;
+}
+
+.review-box .review-swiper .swiper-slide .swiper-slide-content p {
+    font-size: 18px;
+}
+
+.review-box .review-swiper .swiper-buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    height: fit-content;
+    gap: 20px;
+    padding: 25px 50px;
+}
+
+.review-box .review-swiper .swiper-buttons .fas {
+    font-size: 25px;
+    color: #fff;
+}
+
+/* review section end */

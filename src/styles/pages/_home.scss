@@ -1,0 +1,101 @@
+/* home section start  */
+
+.home {
+    padding: 100px 30px;
+    background-color: var(--color-bg);
+}
+
+.home-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    min-height: 500px;
+    margin-top: 80px;
+}
+
+.home-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 1 400px;
+}
+
+.home-box h1 {
+    margin: 0px 0px 25px;
+    font-size: 55px;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: var(--color-accent);
+}
+
+.home-box p {
+    font-size: 20px;
+    color: var(--color-muted-2);
+}
+
+.home-swiper {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+}
+
+.home-swiper .swiper-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-swiper .swiper-item img {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 400px;
+    margin-top: -50px;
+    object-fit: contain;
+}
+
+.home-swiper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 425px;
+    max-height: 425px;
+    background: url(/img/home-section-bg.png) no-repeat center/contain;
+    margin: auto;
+}
+
+.home-swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 380px;
+    width: 100% !important;
+}
+
+.home-swiper .swiper-buttons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    margin: auto;
+    background-color: var(--main-color);
+    gap: 20px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 5px;
+    bottom: 85px;
+    width: fit-content;
+    z-index: 2;
+}
+
+/* home section end */

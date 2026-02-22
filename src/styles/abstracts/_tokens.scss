@@ -1,0 +1,39 @@
+/* ===========================
+   Design Tokens + Themes
+   =========================== */
+
+:root {
+  /* brand */
+  --main-color: #2d2113; /* coffee brown (brand) */
+  --color-accent: #000e40; /* deep blue accent */
+
+  /* neutrals */
+  --color-bg: #ffffff; /* page background */
+  --color-surface: #f7f7f7; /* cards/sections */
+  --color-text: #222222; /* main text */
+  --color-text-2: #333333;
+  --color-muted: #666666;
+  --color-muted-2: #888888;
+  --color-border: rgba(0, 0, 0, 0.12);
+
+  /* common */
+  --radius: 8px;
+  --transition: all 0.3s ease;
+
+  color-scheme: light;
+}
+
+html[data-theme="dark"] {
+  --main-color: #e6c8a9;
+  --color-accent: #3357ff;
+
+  --color-bg: #1b1208;
+  --color-surface: #2d2113;
+  --color-text: #e8e8e8;
+  --color-text-2: #d7d7d7;
+  --color-muted: #b7b7b7;
+  --color-muted-2: #9a9a9a;
+  --color-border: rgba(255, 255, 255, 0.12);
+
+  color-scheme: dark;
+}
